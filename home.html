@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+
+    <!-- daisyUI and tailwindcss CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <section class="flex justify-center">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-4">
+                        <!-- Account Balance -->
+                        <div class="stats shadow">
+                            <div class="stat text-center">
+                                <div class="stat-title">Account Balance</div>
+                                <div id="current-balance" class="stat-value">9300</div>
+                            </div>
+                        </div>
+
+
+                        <div class="divider"></div>
+
+
+                        <!-- Interactive buttons -->
+                        <section>
+                            <div class="grid grid-cols-3 m-2">
+                                <button id="btn-display-add-money" class="btn m-1 h-20">Add Money</button>
+                                <button id="btn-display-cash-out" class="btn m-1 h-20">Cash Out</button>
+                                <button class="btn m-1 h-20">Transfer Money</button>
+                                <button class="btn m-1 h-20">Get Bonus</button>
+                                <button class="btn m-1 h-20">Pay Bill</button>
+                                <button id="btn-display-transaction-history" class="btn m-1 h-20">Transaction</button>
+                            </div>
+                        </section>
+
+                        <!-- add money form starts -->
+                        <section id="add-money-form" class="hidden">
+                            <h1 class="text-xl font-bold mt-3 p-2">Add Money</h1>
+                            <div class="card bg-base-100 w-[352px] shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount to Add</span>
+                                        </label>
+                                        <input type="text" placeholder="Enter Add Money Amount" id="add-amount"
+                                            class="input input-bordered rounded-full" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Pin Number</span>
+                                        </label>
+                                        <input type="password" placeholder="Enter 4 Digit Pin" id="pin-number"
+                                            class="input input-bordered rounded-full" required />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="btn-add-money" class="btn bg-[#0874F2] rounded-full text-white">Add
+                                            Money</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+
+
+                        <!-- cash out form starts -->
+                        <section id="cash-out-form" class="hidden">
+                            <h1 class="text-xl font-bold mt-3 p-2">Cash Out</h1>
+                            <div class="card bg-base-100 w-[352px] shadow-2xl">
+                                <form class="card-body">
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Amount</span>
+                                        </label>
+                                        <input id="cash-out" type="text" placeholder="Enter Amount to Withdraw"
+                                            class="input input-bordered rounded-full" required />
+                                    </div>
+                                    <div class="form-control">
+                                        <label class="label">
+                                            <span class="label-text">Pin Number</span>
+                                        </label>
+                                        <input id="pin-no" type="password" placeholder="Enter 4 Digit Pin"
+                                            class="input input-bordered rounded-full" />
+                                    </div>
+                                    <div class="form-control mt-6">
+                                        <button id="btn-cash-out"
+                                            class="btn bg-[#0874F2] rounded-full text-white">Withdraw Money</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </section>
+                        <!-- Cash Out Form Ends -->
+
+                        <!-- Transaction Form Starts -->
+                         <section id="transaction-history-form" class="hidden">
+                            <h1 class="text-xl font-bold mt-3 p-2">Transaction History</h1>
+                         </section>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/utilities.js"></script>
+    <script src="./js/addMoney.js"></script>
+    <script src="./js/cashOut.js"></script>
+    <script src="./js/features.js"></script>
+</body>
+
+</html>

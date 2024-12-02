@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payoo MFS</title>
+
+    <!-- daisyUI and tailwindcss CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <section class="flex justify-center">
+            <div class="mockup-phone">
+                <div class="camera"></div>
+                <div class="display">
+                    <div class="artboard artboard-demo phone-3">
+
+                        <!-- Login form starts -->
+                        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                            <form class="card-body">
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">Mobile Number</span>
+                                    </label>
+                                    <input id="mobile-no" type="text" placeholder="Enter your number"
+                                        class="input input-bordered  rounded-full" required />
+                                </div>
+                                <div class="form-control">
+                                    <label class="label">
+                                        <span class="label-text">4 Digit Pin</span>
+                                    </label>
+                                    <input id="pin-no" type="password" placeholder="Enter 4 Digit Pin"
+                                        class="input input-bordered  rounded-full" required />
+                                    <label class="label">
+                                        <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                    </label>
+                                </div>
+                                <div class="form-control mt-6">
+                                    <button id="btn-login"
+                                        class="btn bg-[#0874F2] rounded-full text-white">Login</button>
+                                </div>
+                            </form>
+                        </div>
+
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="./js/login.js"></script>
+</body>
+
+</html>
